@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<link rel="stylesheet" href="Style.css">
+ <body>
+<style>
+  .spiner{
+  background-color: rgb(45, 195, 229);
+  height: 50px;
+  width: 70px;
+  border-radius: 50px;
+   border: 25px solid hsl(75, 82%, 47%)
+  border: top 20px;
+  animation: uni 2.5s linear infinite;
+  }
+
+@keyframes uni{
+      to{ 
+         transform: rotate(180deg);
+      }
+    }
+</style>
+<h2>Login</h2>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname""><br>
+  <label for="lname">Last name:</label><br>
+  <input type="password" id="Senha" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+<div class="spiner"></div>
+</html>
+</body>
